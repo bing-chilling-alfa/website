@@ -1,5 +1,5 @@
 @extends('layouts.default')
 
 @section('content')
-    Content hiero84ii
+    Content hiero
 @endsection
