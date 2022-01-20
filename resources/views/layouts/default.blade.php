@@ -10,7 +10,9 @@
 </head>
 
 <body>
+    {{View::make('layouts.header')}}
     @yield('content')
+    {{View::make('layouts.footer')}}
 </body>
 
 </html>
