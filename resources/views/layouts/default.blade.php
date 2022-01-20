@@ -10,9 +10,13 @@
 </head>
 
 <body>
-    {{ View::make('layouts.header') }}
-    @yield('content')
-    {{ View::make('layouts.footer') }}
+    <div class="relative d-flex flex-column mw-100 min-vh-100">
+        {{ View::make('layouts.header') }}
+        <main class="relative d-flex mw-100" style="flex: 1 1 auto;">
+            @yield('content')
+        </main>
+        {{ View::make('layouts.footer') }}
+    </div>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
