@@ -14,11 +14,11 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id('user_id');
+            $table->id();
             $table->string('voornaam');
             $table->string('achternaam');
             $table->string('email')->unique();
-//            $table->timestamp('email_verified_at')->nullable();
+            //            $table->timestamp('email_verified_at')->nullable();
             $table->string('telefoonnummer');
             $table->string('password');
             $table->string('business_id'); // TODO make as FK

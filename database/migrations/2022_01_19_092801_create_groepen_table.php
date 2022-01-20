@@ -14,7 +14,7 @@ class CreateGroepenTable extends Migration
     public function up()
     {
         Schema::create('groepen', function (Blueprint $table) {
-            $table->id('groep_id');
+            $table->id();
             $table->string('type-groep');
             $table->timestamps();
         });
