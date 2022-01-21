@@ -3,3 +3,4 @@
 @section('content')
     Content hier
 @endsection
+
