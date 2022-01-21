@@ -14,9 +14,9 @@ class CreateVacaturesTable extends Migration
     public function up()
     {
         Schema::create('vacatures', function (Blueprint $table) {
-            $table->id();
-            $table->string('business_id'); //TODO MAKE AS A FK IS ID FROM BEDRIJF
-            $table->string('type-opleiding'); //TODO MAKE AS A FK FOR bol__bbl
+            $table->id('vacature_id');
+            $table->mediumInteger('business_id'); //TODO MAKE AS A FK IS ID FROM BEDRIJF
+            $table->mediumInteger('type-opleiding'); //TODO MAKE AS A FK FOR bol__bbl
             $table->string('start-datum');
             $table->string('eind-datum');
             $table->timestamps();
