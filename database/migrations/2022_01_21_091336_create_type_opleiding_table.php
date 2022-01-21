@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBusinessTable extends Migration
+class CreateTypeOpleidingTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,9 @@ class CreateBusinessTable extends Migration
      */
     public function up()
     {
-        Schema::create('Business', function (Blueprint $table) {
+        Schema::create('type_opleiding', function (Blueprint $table) {
             $table->id();
-            $table->string('naam');
-            $table->string('telefoonnummer');
-            $table->string('email');
-            $table->string('website');
-            $table->string('adres');
-            $table->string('postcode');
-            $table->rememberToken();
+            $table->string('title');
             $table->timestamps();
         });
     }
@@ -33,6 +27,6 @@ class CreateBusinessTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('business');
+        Schema::dropIfExists('type_vacature');
     }
 }

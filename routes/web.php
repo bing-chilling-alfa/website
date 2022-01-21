@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'pages.home');
-Route::view('/login', 'pages.login');
+Route::view('/', 'pages.home')->name('home');
+Route::view('/login', 'pages.login')->name('login');
+Route::view('/contact', 'pages.contact')->name('contact');

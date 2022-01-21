@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             //            $table->timestamp('email_verified_at')->nullable();
             $table->string('telefoonnummer');
             $table->string('password');
-            $table->string('business_id'); // TODO make as FK
+            $table->mediumInteger('business_id'); // TODO make as FK
             $table->string('groep_id'); // TODO make as FK
             $table->string('user_type_id'); // TODO make as FK
             $table->rememberToken();

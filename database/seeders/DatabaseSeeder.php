@@ -22,5 +22,9 @@ class DatabaseSeeder extends Seeder
 //            Groep::class,
 //
 //        ])
+        \App\Models\User::factory(10)->create();
+        \App\Models\Business::factory(10)->create();
+        \App\Models\Vacature::factory(10)->create();
+        \App\Models\Opleiding::factory(10)->create();
     }
 }
