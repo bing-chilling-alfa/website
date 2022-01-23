@@ -23,8 +23,14 @@ class DatabaseSeeder extends Seeder
 //
 //        ])
         \App\Models\User::factory(10)->create();
-        \App\Models\Business::factory(10)->create();
+        \App\Models\Company::factory(10)->create();
         \App\Models\Vacature::factory(10)->create();
-        \App\Models\Opleiding::factory(10)->create();
+        \App\Models\Opleiding::factory(2)->create();
+
+
+
+
+
+
     }
 }
