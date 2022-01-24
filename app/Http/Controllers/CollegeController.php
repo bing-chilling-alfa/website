@@ -13,7 +13,7 @@ class CollegeController extends Controller
      */
     public function index()
     {
-        $colleges = College::latest
+       return view('pages.index');
     }
 
     /**
