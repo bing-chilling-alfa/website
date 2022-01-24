@@ -3,7 +3,7 @@
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
             <i class="fas fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="{{ url('home') }}">Logo</a>
+        <a class="navbar-brand" href="{{ route('home') }}">Logo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,13 +23,13 @@
     <div class="offcanvas-body">
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('home') }}">Home</a>
+                <a class="nav-link" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('login') }}">Login</a>
+                <a class="nav-link" href="{{ route('login') }}">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('contact') }}">Contact</a>
+                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
             </li>
         </ul>
     </div>
