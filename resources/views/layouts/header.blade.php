@@ -8,12 +8,22 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Zoeken naar stagebedrijf...">
-                <button class="btn btn-primary" type="button">Zoeken</button>
+            <form class="flex-column justify-content-center">
+                <input class="form-control" type="text" placeholder="Zoeken naar stagebedrijf..." style="width:200%;">
             </form>
         </div>
-        
+        <div class="dropdown">
+        <a class="navbar-brand justify-content-end rounded-pill" href="#" style="background-color:red;" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+         <img src="" style="width:40px;"> 
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+        <li><b>Naam</b></li>
+        <li><b>Rol</b></li>
+        <hr/>
+        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+        <li><a class="dropdown-item" href="#">Uitloggen</a></li>
+        </ul>
+        </div>
     </div>
 </nav>
 <div class="offcanvas offcanvas-start" id="demo">
