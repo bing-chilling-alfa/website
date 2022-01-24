@@ -14,7 +14,7 @@ class OpleidingFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->name('bbl','bol')
+            'type-opleiding' => $this->faker->tld(),
         ];
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTypeOpleidingTable extends Migration
+class CreateOpleidingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateTypeOpleidingTable extends Migration
      */
     public function up()
     {
-        Schema::create('type_opleiding', function (Blueprint $table) {
+        Schema::create('opleidings', function (Blueprint $table) {
+//            $table->id();
+//            $table->timestamps();
             $table->id();
-            $table->string('title');
+            $table->string('type-opleiding');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateTypeOpleidingTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type_vacature');
+        Schema::dropIfExists('opleidings');
     }
 }
