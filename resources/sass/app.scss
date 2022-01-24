@@ -1,4 +1,19 @@
-@import "variables";
+@charset "UTF-8";
+// 2. Abstracts
+@use "abstracts" as *;
+// 3. Base
+@use "base" as *;
+// 4. Components
+@use "components" as *;
+// Layout
+@use "layout" as *;
+// 6. Pages
+@use "pages" as *;
+// 7. Themes
+@import 'themes/default';
+// 8. Vendors
+@import 'vendors/normalize';
+// 8. Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
