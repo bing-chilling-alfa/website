@@ -13,24 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//        $this->call([
-//            UserSeeder::class,
-//            BedrijfSeeder::class,
-//            VacatureSeeder::class,
-//            RelatieSeeder::class,
-//            Bestand_studentSeeder::class,
-//            Groep::class,
-//
-//        ])
         \App\Models\User::factory(10)->create();
         \App\Models\Company::factory(10)->create();
-        \App\Models\Vacature::factory(10)->create();
-        \App\Models\Opleiding::factory(2)->create();
-
-
-
-
-
-
+        \App\Models\vacancy::factory(10)->create();
+        \App\Models\College::factory(2)->create();
     }
 }
