@@ -7,12 +7,13 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
+        <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
             <form class="d-flex">
                 <input class="form-control me-2" type="text" placeholder="Zoeken naar stagebedrijf...">
                 <button class="btn btn-primary" type="button">Zoeken</button>
             </form>
         </div>
+        
     </div>
 </nav>
 <div class="offcanvas offcanvas-start" id="demo">
