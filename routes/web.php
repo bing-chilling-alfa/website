@@ -17,5 +17,5 @@ Route::view('/', 'pages.home')->name('home');
 Route::view('/login', 'pages.login')->name('login');
 Route::view('/company', 'pages.company')->name('company');
 Route::view('/college', 'pages.college')->name('college');
-Route::view('/vacancy', 'pages.vacancy')->name('vacancy');
+Route::view('/vacature', 'pages.vacature')->name('vacature');
 Route::view('/contact', 'pages.contact')->name('contact');
