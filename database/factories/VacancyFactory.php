@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class OpleidingFactory extends Factory
+class VacancyFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,7 +14,11 @@ class OpleidingFactory extends Factory
     public function definition()
     {
         return [
-            'type-opleiding' => $this->faker->tld(),
+            //
+            'business_id' => $this->faker->name(),
+            'type-opleiding' => $this->faker->numberBetween(1,2),
+            'start-datum' => "1-1-2021",
+            'eind-datum' => "1-1-2022",
         ];
     }
 }
