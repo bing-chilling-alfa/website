@@ -17,6 +17,7 @@ Route::view('/', 'pages.home')->name('home');
 Route::view('/login', 'pages.login')->name('login');
 Route::view('/privacy', 'pages.privacy')->name('privacy');
 Route::view('/voorwaarden', 'pages.voorwaarden')->name('voorwaarden');
+Route::view('/bedrijven-archief', 'pages.company_archive')->name('bedrijven-archief');
 //Route::view('/company', 'pages.company')->name('company');
 //Route::view('/college', 'pages.college')->name('college');
 //Route::view('/vacature', 'pages.vacature')->name('vacature');
