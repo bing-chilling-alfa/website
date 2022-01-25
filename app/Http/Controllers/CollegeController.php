@@ -2,28 +2,33 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\college;
 use Illuminate\Http\Request;
 
+/**
+ * @method validate(Request $request, string[] $array)
+ */
 class CollegeController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Illuminate\Http\Request|\Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-       return view('pages.index');
+        $colleges = College::all();
+        return view('$colleges.index', compact('colleges', 'colleges'));
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return string
      */
     public function create()
     {
-        //
+        return ('colleges.create');
     }
 
     /**
@@ -34,29 +39,38 @@ class CollegeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate( $request,
+            [
+                'id' => 'required',
+                'type-opleiding' => 'required',
+                'timestamps'=>'required',
+            ]);
+        $input = $request->all();
+        College::create($input);
     }
 
     /**
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+        $college = College::findOrFail($id);
+        return view('colleges.show', compact('college','college'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit($id)
     {
-        //
+        $college = College::find($id);
+        return view('colleges.edit', compact('college','college'));
     }
 
     /**
@@ -64,21 +78,34 @@ class CollegeController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, $id)
     {
-        //
+        $college = College::findOrfail($id);
+        $this->validate( $request,
+        [
+            'id' => 'required',
+            'type-opleiding' => 'required',
+            'timestamps'=>'required',
+        ]);
+        $input = $request->all();
+        $college->fill($input)->save();
+
+        return redirect()->route('college.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
-        //
+        $college = College::findOrFail($id);
+
+        $college-> delete();
+        return redirect()->route('college.index');
     }
 }
