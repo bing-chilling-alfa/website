@@ -8,8 +8,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-            <form class="flex-column justify-content-center">
-                <input class="form-control" type="text" placeholder="Zoeken naar stagebedrijf..." style="width:200%;">
+            <form class="d-flex" style="width:50%;">
+                <i class="fas fa-search" style="position:absolute; left:30%; top:20px;"></i>
+                <input class="form-control" type="text" placeholder="Zoeken naar een stagebedrijf." style="text-indent: 5%;">
             </form>
         </div>
         <div class="dropdown">
@@ -41,6 +42,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
             </li>
         </ul>
     </div>
