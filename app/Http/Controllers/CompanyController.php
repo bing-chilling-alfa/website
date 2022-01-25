@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Company;
+
+use Illuminate\Support\Facades\DB;
 
 class CompanyController extends Controller
 {
@@ -13,7 +16,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        //
+        $data = Company::all();
+        return view('company_archive', ['companies' => $data]);
     }
 
     /**
