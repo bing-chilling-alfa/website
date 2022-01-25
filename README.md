@@ -3,7 +3,7 @@
 ## Cloning
 
 1. Clone the repository in your projects folder (or anywhere you want):
-   
+
     ```bash
     git clone https://github.com/bing-chilling-alfa/website.git
     ```
