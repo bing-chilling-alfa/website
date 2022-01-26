@@ -15,7 +15,7 @@
                             <div>
                                 <label for="email">E-mailadres</label>
                                 <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                                    id="email" />
+                                    id="email" value="{{ old('email') }}" />
                                 @error('email')
                                     <small class="invalid-feedback d-block">
                                         {{ $message }}
