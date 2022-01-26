@@ -1,6 +1,7 @@
-<!doctype html>
-<title lang=" {{conf('app.locale')}}">
-<title>{{config('app.name','Stagesysteem')}}</title>
+@extends('layouts.default')
 
+@section('content')
 
-</html>
+    Content hiero
+
+@endsection
