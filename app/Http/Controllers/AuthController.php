@@ -20,7 +20,5 @@ class AuthController extends Controller
         ]);
 
         dd($validatedData);
-
-        return view('pages.index');
     }
 }
