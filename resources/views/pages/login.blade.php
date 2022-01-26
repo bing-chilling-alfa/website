@@ -9,7 +9,9 @@
                         <h5 class="card-title">
                             Inloggen
                         </h5>
-                        <form>
+                        <form method="POST">
+                            @csrf
+
                             <div>
                                 <label for="email">E-mailadres</label>
                                 <input type="email" class="form-control" id="email" />

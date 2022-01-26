@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,28 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //
-Route::view('/', 'pages.index')->name('home');
-Route::view('/login', 'pages.login')->name('login');
-Route::view('/privacy', 'pages.privacy')->name('privacy');
-Route::view('/voorwaarden', 'pages.voorwaarden')->name('voorwaarden');
-Route::view('/bedrijven-archief', 'pages.company_archive')->name('bedrijven-archief');
-//Route::view('/company', 'pages.company')->name('company');
-//Route::view('/college', 'pages.college')->name('college');
-//Route::view('/vacature', 'pages.vacature')->name('vacature');
-Route::view('/contact', 'pages.contact')->name('contact');
 
-Route::get('/users/{id}/{name}', function ($id, $name) {
-    return $id . $name;
-});
+Route::group(['prefix' => '/'], function () {
+    Route::view('/', 'pages.index')->name('home');
 
-Route::get('/college', function () {
-    return view('pages.college');
-});
+    // Auth Routes
+    Route::group(['prefix' => '/'], function () {
+        Route::view('/login', 'pages.login')->name('login');
+        Route::post('/login', [AuthController::class, 'login'])->name('login');
+    });
 
-Route::get('/company', function () {
-    return view('pages.company');
-});
+    // Legal Routes
+    Route::group(['prefix' => '/'], function () {
+        Route::view('/privacy', 'pages.privacy')->name('privacy');
+        Route::view('/voorwaarden', 'pages.voorwaarden')->name('voorwaarden');
+    });
 
-Route::get('/vacature', function () {
-    return view('pages.vacature');
+    // Others
+    Route::view('/contact', 'pages.contact')->name('contact');
+    Route::view('/college', 'pages.college')->name('college');
+    Route::view('/company', 'pages.company')->name('company');
+    Route::view('/vacature', 'pages.vacature')->name('vacature');
+    Route::view('/bedrijven', 'pages.companies')->name('companies');
 });
