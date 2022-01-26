@@ -21,7 +21,7 @@ Route::group(['prefix' => '/'], function () {
     // Auth Routes
     Route::group(['prefix' => '/'], function () {
         Route::view('/login', 'pages.login')->name('login');
-        Route::post('/login', [AuthController::class, 'login'])->name('login');
+        Route::post('/login', [AuthController::class, 'login']);
     });
 
     // Legal Routes

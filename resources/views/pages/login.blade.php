@@ -9,16 +9,28 @@
                         <h5 class="card-title">
                             Inloggen
                         </h5>
-                        <form method="POST">
+                        <form method="POST" action="{{ route('login') }}" novalidate>
                             @csrf
 
                             <div>
                                 <label for="email">E-mailadres</label>
-                                <input type="email" class="form-control" id="email" />
+                                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
+                                    id="email" />
+                                @error('email')
+                                    <small class="invalid-feedback d-block">
+                                        {{ $message }}
+                                    </small>
+                                @enderror
                             </div>
                             <div class="mt-3">
                                 <label for="password">Wachtwoord</label>
-                                <input type="password" class="form-control" id="password" />
+                                <input type="password" name="password"
+                                    class="form-control @error('password') is-invalid @enderror" id="password" />
+                                @error('password')
+                                    <small class="invalid-feedback d-block">
+                                        {{ $message }}
+                                    </small>
+                                @enderror
                             </div>
                             <div class="mt-3 d-grid">
                                 <button type="submit" class="btn btn-primary">
