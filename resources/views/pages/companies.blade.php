@@ -3,9 +3,11 @@
 @section('content')
 @foreach($companies as $company)
 
- {{$company->naam()}}
+ {{$company['naam']}}
 
 @endforeach
+
+
 <div class="card w-75">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
