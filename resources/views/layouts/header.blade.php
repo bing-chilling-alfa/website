@@ -9,7 +9,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
             <form class="d-flex" style="width:50%;">
-                <i class="fas fa-search" style="position:absolute; left:30%; top:20px;"></i>
+                {{--    removing search     --}}
+{{--                <i class="fas fa-search" style="position:absolute; left:30%; top:20px;"></i>--}}
+                {{--    end removing search     --}}
                 <input class="form-control" type="text" placeholder="Zoeken naar een stagebedrijf."
                     style="text-indent: 5%;">
             </form>
