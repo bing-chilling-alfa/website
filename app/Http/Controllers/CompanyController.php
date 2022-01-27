@@ -23,7 +23,7 @@ class CompanyController extends Controller
         // return view('companies', ['companies' => $data]);
 
           $companies = Company::all();
-          return view('companies', compact('companies'));
+          return view('pages.companies', compact('companies'));
     }
 
     /**
