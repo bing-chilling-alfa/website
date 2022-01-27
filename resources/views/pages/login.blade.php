@@ -4,6 +4,11 @@
     <div class="container py-3">
         <div class="row h-100 align-items-sm-center justify-content-center">
             <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-4">
+                @if (session('status'))
+                    <div class="alert alert-danger" role="alert">
+                        {{ session('status') }}
+                    </div>
+                @endif
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">
