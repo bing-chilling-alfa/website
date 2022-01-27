@@ -106,7 +106,7 @@ class CompanyController extends Controller
                 'timestamps' =>'required',
             ]);
         $input = $request->all();
-        $company->fill($input)->save();
+        $companies ->fill($input)->save();
 
         return redirect()->route('company.index');
     }
@@ -118,9 +118,9 @@ class CompanyController extends Controller
      */
     public function destroy($id)
     {
-        $company = Company::findOrFail($id);
+        $companies = Company::findOrFail($id);
 
-        $company-> delete();
+        $companies-> delete();
         return redirect()->route('companies.index');
     }
 }
