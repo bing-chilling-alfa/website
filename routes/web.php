@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //
 
 Route::group(['prefix' => '/'], function () {
-    Route::view('/', 'pages.index')->name('home');
+    Route::view('/', 'pages.home')->name('home');
 
     // Auth Routes
     Route::group(['prefix' => '/'], function () {

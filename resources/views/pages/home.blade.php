@@ -7,11 +7,15 @@
 
 
 @section('content')
-    <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-        <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Zoeken naar stagebedrijf...">
-            <button class="btn btn-primary" type="button">Zoeken</button>
-        </form>
-    </div>
-    <img class="flex overflow-hidden w-100 h-50" src="https://wallpaperaccess.com/full/187161.jpg" alt="https://wallpaperaccess.com/full/187161.jpg">
+{{--    <div class="home_page">--}}
+        <div class="container">
+            <div class="justify-content-center" id="mynavbar">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Zoeken naar stagebedrijf...">
+                    <button class="btn btn-primary" type="button">Zoeken</button>
+                </form>
+            </div>
+        </div>
+{{--    </div>--}}
+{{--    <img class="flex overflow-hidden w-100 h-50" src="https://wallpaperaccess.com/full/187161.jpg" alt="https://wallpaperaccess.com/full/187161.jpg">--}}
 @endsection
