@@ -23,7 +23,7 @@ class CompanyController extends Controller
         // return view('companies', ['companies' => $data]);
 
         $companies = Company::all();
-        return view('companies', compact('companies'));
+        return view('pages.companies', compact('companies'));
     }
 
     /**
@@ -44,17 +44,19 @@ class CompanyController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate( $request,
+        $this->validate(
+            $request,
             [
-                'id'=>'required',
-                'naam'=> 'required',
-                'telefoonnummer'=> 'required|numeric',
-                'email'=>'required',
-                'website'=>'required',
-                'postcode'=>'required',
-                'rememberToken'=>'required',
-                'timestamps' =>'required',
-            ]);
+                'id' => 'required',
+                'naam' => 'required',
+                'telefoonnummer' => 'required|numeric',
+                'email' => 'required',
+                'website' => 'required',
+                'postcode' => 'required',
+                'rememberToken' => 'required',
+                'timestamps' => 'required',
+            ]
+        );
         $input = $request->all();
         Company::create($input);
     }
@@ -68,7 +70,7 @@ class CompanyController extends Controller
     public function show($id)
     {
         $company = Company::findOrFail($id);
-        return view('companies.show', compact('company','company'));
+        return view('companies.show', compact('company', 'company'));
     }
 
     /**
@@ -80,8 +82,7 @@ class CompanyController extends Controller
     public function edit($id)
     {
         $company = Company::find($id);
-        return view('companies.edit', compact('company','company'));
-
+        return view('companies.edit', compact('company', 'company'));
     }
 
     /**
@@ -94,19 +95,21 @@ class CompanyController extends Controller
     public function update(Request $request, $id)
     {
         $companies = Company::findOrfail($id);
-        $this->validate( $request,
+        $this->validate(
+            $request,
             [
-                'id'=>'required',
-                'naam'=> 'required',
-                'telefoonnummer'=> 'required|numeric',
-                'email'=>'required',
-                'website'=>'required',
-                'postcode'=>'required',
-                'rememberToken'=>'required',
-                'timestamps' =>'required',
-            ]);
+                'id' => 'required',
+                'naam' => 'required',
+                'telefoonnummer' => 'required|numeric',
+                'email' => 'required',
+                'website' => 'required',
+                'postcode' => 'required',
+                'rememberToken' => 'required',
+                'timestamps' => 'required',
+            ]
+        );
         $input = $request->all();
-        $companies ->fill($input)->save();
+        $companies->fill($input)->save();
 
         return redirect()->route('company.index');
     }
@@ -120,8 +123,7 @@ class CompanyController extends Controller
     {
         $companies = Company::findOrFail($id);
 
-        $companies-> delete();
+        $companies->delete();
         return redirect()->route('companies.index');
     }
 }
-
