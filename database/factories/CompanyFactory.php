@@ -16,13 +16,14 @@ class CompanyFactory extends Factory
     public function definition()
     {
         return [
-            'naam' => $this->faker->name(),
-            'telefoonnummer' => $this->faker->name(),
+            'name' => $this->faker->name(),
+            'phone_number' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-//            'email_verified_at' => now(),
-            'website' => 'www'.$this->faker->name().'@gmail.com',
-            'adres' => $this->faker->address(),
-            'postcode' => $this->faker->postcode()
+            'website' => $this->faker->url(),
+            'street_name' => $this->faker->streetName(),
+            'house_number' => $this->faker->buildingNumber(),
+            'zip_code' => $this->faker->postcode(),
+            'place_name' => $this->faker->city()
         ];
     }
 }
