@@ -15,15 +15,15 @@
         </div>
         <div class="dropdown">
         <a class="navbar-brand justify-content-end rounded-pill" href="#" style="background-color:red;" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-         <img src="" style="width:40px;"> 
+         <img src="" style="width:40px;">
         </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
-        <li><b>Naam</b></li>
-        <li><b>Rol</b></li>
-        <hr/>
-        <li><a class="dropdown-item" href="#">Dashboard</a></li>
-        <li><a class="dropdown-item" href="#">Uitloggen</a></li>
-        </ul>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                <li><b>Naam</b></li>
+                <li><b>Rol</b></li>
+                <hr/>
+                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">Uitloggen</a></li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -42,6 +42,18 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>

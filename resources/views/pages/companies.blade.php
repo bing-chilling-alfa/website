@@ -3,7 +3,9 @@
 @section('content')
 @foreach($companies as $company)
 
+
  {{$company['naam']}}
+
 
 @endforeach
 
@@ -15,4 +17,5 @@
     <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
+
 @endsection
