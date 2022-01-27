@@ -9,9 +9,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
             <form class="d-flex" style="width:50%;">
-                <i class="fas fa-search" style="position:absolute; left:30%; top:20px;"></i>
-                <input class="form-control" type="text" placeholder="Zoeken naar een stagebedrijf."
-                    style="text-indent: 5%;">
+                {{-- removing search --}}
+                {{-- <i class="fas fa-search" style="position:absolute; left:30%; top:20px;"></i> --}}
+                {{-- end removing search --}}
+                <input class="form-control" type="text" placeholder="Zoek naar bedrijven...">
             </form>
         </div>
         <div class="dropdown">
@@ -45,7 +46,22 @@
                 </li>
             @endguest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                <a class="nav-link" href="{{ route('company') }}">bedrijven</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('contact') }}">contact</a>
+            </li>
+            <li class="nav-item">
+                {{-- <a class="nav-link" href="{{ route('stageplek') }}">stageplek</a> --}}
+            </li>
+            <li class="nav-item">
+                {{-- <a class="nav-link" href="{{ route('user') }}">user</a> --}}
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('college') }}">college</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('voorwaarden') }}">voorwaarden</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
