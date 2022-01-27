@@ -15,7 +15,7 @@ class CompanyController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
@@ -23,7 +23,7 @@ class CompanyController extends Controller
         // return view('companies', ['companies' => $data]);
 
          $companies = Company::all();
-         return view('companies.index', compact('companies', 'companies'));
+         return view('companies', compact('companies'));
     }
 
     /**
@@ -93,7 +93,7 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $company = Company::findOrfail($id);
+        $companies = Company::findOrfail($id);
         $this->validate( $request,
             [
                 'id'=>'required',
@@ -106,7 +106,7 @@ class CompanyController extends Controller
                 'timestamps' =>'required',
             ]);
         $input = $request->all();
-        $company->fill($input)->save();
+        $companies ->fill($input)->save();
 
         return redirect()->route('company.index');
     }
@@ -118,9 +118,9 @@ class CompanyController extends Controller
      */
     public function destroy($id)
     {
-        $company = Company::findOrFail($id);
+        $companies = Company::findOrFail($id);
 
-        $company-> delete();
+        $companies-> delete();
         return redirect()->route('companies.index');
     }
 }
