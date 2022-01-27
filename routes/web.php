@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CompanyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,10 +31,14 @@ Route::group(['prefix' => '/'], function () {
         Route::view('/voorwaarden', 'pages.voorwaarden')->name('voorwaarden');
     });
 
+    // Company Routes
+    Route::group(['prefix' => '/bedrijven'], function () {
+        Route::get('/', [CompanyController::class, 'index'])->name('companies');
+    });
+
     // Others
     Route::view('/contact', 'pages.contact')->name('contact');
     Route::view('/college', 'pages.college')->name('college');
     Route::view('/company', 'pages.company')->name('company');
     Route::view('/vacature', 'pages.vacature')->name('vacature');
-    Route::view('/bedrijven', 'pages.companies')->name('companies');
 });
