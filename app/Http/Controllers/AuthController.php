@@ -21,4 +21,5 @@ class AuthController extends Controller
 
         dd($validatedData);
     }
+
 }

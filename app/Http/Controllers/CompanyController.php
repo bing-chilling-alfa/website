@@ -93,7 +93,7 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $company = Company::findOrfail($id);
+        $companies = Company::findOrfail($id);
         $this->validate( $request,
             [
                 'id'=>'required',
