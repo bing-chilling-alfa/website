@@ -45,7 +45,22 @@
                 </li>
             @endguest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                <a class="nav-link" href="{{ route('company') }}">bedrijven</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('contact') }}">contact</a>
+            </li>
+            <li class="nav-item">
+{{--                <a class="nav-link" href="{{ route('stageplek') }}">stageplek</a>--}}
+            </li>
+            <li class="nav-item">
+{{--                <a class="nav-link" href="{{ route('user') }}">user</a>--}}
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('college') }}">college</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('voorwaarden') }}">voorwaarden</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
