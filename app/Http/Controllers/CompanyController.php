@@ -19,11 +19,11 @@ class CompanyController extends Controller
      */
     public function index()
     {
-//        $data = Company::all();
-//        return view('company_archive', ['companies' => $data]);
+        // $data = Company::all();
+        // return view('companies', ['companies' => $data]);
 
-        $companies = Company::all();
-        return view('$companies.index', compact('companies', 'companies'));
+         $companies = Company::all();
+         return view('companies.index', compact('companies', 'companies'));
     }
 
     /**
