@@ -15,7 +15,7 @@
             <h3 class="card-title">test</h3>
             <p class="card-text">test</p>
             <p class="card-text">test</p>
-            <a href="/bedrijven" class="btn btn-primary">Informatie over</a>
+            <a href="/vacature/{{$vacature['id']}}" class="btn btn-primary">Informatie over</a>
           </div>
         </div>
       </div>
