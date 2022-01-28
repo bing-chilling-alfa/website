@@ -21,11 +21,13 @@ class CreateUsersTable extends Migration
             //            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('phone_number');
-            $table->mediumInteger('business_id'); // TODO make as FK
+            $table->foreignId('business_id')->references('id')->on('companies');
             $table->string('group_id'); // TODO make as FK
             $table->string('user_type_id'); // TODO make as FK
             $table->rememberToken();
             $table->timestamps();
+
+//            $table->foreignId('business_id')->references('id')->on('companies');
         });
     }
 
