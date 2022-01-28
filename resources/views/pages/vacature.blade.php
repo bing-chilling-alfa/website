@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-{{--@section('content') TODO change stageplek->vacature--}}
+@section('content')
 
 <div class="container">
 {{--<div class="stageplek align-items-sm-center">--}}
