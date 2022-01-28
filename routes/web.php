@@ -37,6 +37,11 @@ Route::group(['prefix' => '/'], function () {
         Route::get('/', [CompanyController::class, 'index'])->name('companies');
     });
 
+    // Vacatures Routes
+    Route::group(['prefix' => '/vacatures'], function () {
+        Route::get('/', [VacatureController::class, 'index'])->name('vacatures');
+    });
+
     // Others
     Route::view('/contact', 'pages.contact')->name('contact');
     Route::view('/college', 'pages.college')->name('college');
