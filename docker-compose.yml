@@ -1,0 +1,42 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: chilling/php
+        container_name: chilling
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: app
+            SERVICE_TAGS: dev
+        working_dir: /var/www/html/
+
+    db:
+        image: 'mysql/mysql-server:8.0'
+        ports:
+            - '${FORWARD_DB_PORT:-8001}:3306'
+        environment:
+            MYSQL_ROOT_HOST: "%"
+            MYSQL_DATABASE: 'bingchilling'
+            MYSQL_USER: 'bingchilling'
+            MYSQL_PASSWORD: 'bingchilling'
+        volumes:
+            - "./data/mysql:/var/lib/mysql"
+        healthcheck:
+            test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
+            retries: 3
+            timeout: 5s
+
+
+
+    nginx:
+        image: nginx:alpine
+        container_name: bingchilling
+        restart: unless-stopped
+        ports:
+            - 8000:80
+        volumes:
+            - ./:/var/www
+            - ./docker-compose/nginx:/etc/nginx/conf.d/

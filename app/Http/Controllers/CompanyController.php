@@ -15,7 +15,11 @@ class CompanyController extends Controller
     /**
      * Display a listing of the resource.
      *
+<<<<<<< Updated upstream
       * /@return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+=======
+     * @return
+>>>>>>> Stashed changes
      */
     public function index()
     {
@@ -118,9 +122,9 @@ class CompanyController extends Controller
      */
     public function destroy($id)
     {
-        $companies = Company::findOrFail($id);
+        $company = Company::findOrFail($id);
 
-        $companies-> delete();
+        $company-> delete();
         return redirect()->route('companies.index');
     }
 }
