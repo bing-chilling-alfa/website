@@ -16,7 +16,8 @@
             <p class="card-text"><b>Start datum:</b> {{$vacature['start-datum']}} </p>
             <p class="card-text"><b>Eind datum:</b> {{$vacature['eind-datum']}}</p>
             <p class="card-text"><b>Type opleiding:</b> {{$vacature['type-opleiding']}}</p>
-            <a href="/vacature/{{$vacature['id']}}" class="btn btn-primary">Informatie over vacature bij {{$vacature['business_id']}}</a>
+{{--              <a href="/vacature/{{$vacature['id']}}" class="btn btn-primary">Informatie over vacature bij {{$vacature['title']}}</a>--}}
+              <a href="/vacature/{{$vacature['id']}}" class="btn btn-primary">Ga naar de vacature</a>
           </div>
         </div>
       <div class="card-footer text-muted">

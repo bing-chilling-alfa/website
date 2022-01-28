@@ -18,6 +18,7 @@ class VacatureFactory extends Factory
         return [
             //
             'business_id' => $this->faker->numberBetween(1,15),
+            'title' => $this->faker->name(),
             'type-opleiding' => $this->faker->numberBetween(1,2),
             'start-datum' => "1-1-2021",
             'eind-datum' => "1-1-2022",

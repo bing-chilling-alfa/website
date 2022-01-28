@@ -17,6 +17,7 @@ class CreateVacaturesTable extends Migration
             $table->id();
 //            $table->string('text');
             $table->string('business_id'); //TODO MAKE AS A FK IS ID FROM BEDRIJF
+            $table->string('title');
             $table->string('type-opleiding'); //TODO MAKE AS A FK FOR bol__bbl
             $table->string('start-datum');
             $table->string('eind-datum');
