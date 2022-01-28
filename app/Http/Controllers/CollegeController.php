@@ -18,7 +18,7 @@ class CollegeController extends Controller
     public function index()
     {
         $colleges = College::all();
-        return view('$colleges.index', compact('colleges', 'colleges'));
+        return view('pages.colleges.index', compact('colleges', 'colleges'));
     }
 
     /**
@@ -28,7 +28,7 @@ class CollegeController extends Controller
      */
     public function create()
     {
-        return ('colleges.create');
+        return view('pages.colleges.create');
     }
 
     /**
@@ -39,12 +39,14 @@ class CollegeController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate( $request,
+        $this->validate(
+            $request,
             [
                 'id' => 'required',
                 'type-opleiding' => 'required',
-                'timestamps'=>'required',
-            ]);
+                'timestamps' => 'required',
+            ]
+        );
         $input = $request->all();
         College::create($input);
     }
@@ -58,7 +60,7 @@ class CollegeController extends Controller
     public function show($id)
     {
         $college = College::findOrFail($id);
-        return view('colleges.show', compact('college','college'));
+        return view('pages.colleges.show', compact('college', 'college'));
     }
 
     /**
@@ -70,7 +72,7 @@ class CollegeController extends Controller
     public function edit($id)
     {
         $college = College::find($id);
-        return view('colleges.edit', compact('college','college'));
+        return view('pages.colleges.edit', compact('college', 'college'));
     }
 
     /**
@@ -83,12 +85,14 @@ class CollegeController extends Controller
     public function update(Request $request, $id)
     {
         $college = College::findOrfail($id);
-        $this->validate( $request,
-        [
-            'id' => 'required',
-            'type-opleiding' => 'required',
-            'timestamps'=>'required',
-        ]);
+        $this->validate(
+            $request,
+            [
+                'id' => 'required',
+                'type-opleiding' => 'required',
+                'timestamps' => 'required',
+            ]
+        );
         $input = $request->all();
         $college->fill($input)->save();
 
@@ -105,7 +109,7 @@ class CollegeController extends Controller
     {
         $college = College::findOrFail($id);
 
-        $college-> delete();
+        $college->delete();
         return redirect()->route('college.index');
     }
 }

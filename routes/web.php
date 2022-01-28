@@ -1,6 +1,8 @@
 <?php
 
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\VacatureController;
 use Illuminate\Support\Facades\Route;
@@ -19,35 +21,39 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => '/'], function () {
     Route::view('/', 'pages.home')->name('home');
+    Route::view('/contact', 'pages.contact')->name('contact');
+
 
     // Auth Routes
-    Route::group(['prefix' => '/'], function () {
-        Route::view('/login', 'pages.login')->name('login');
-        Route::post('/login', [AuthController::class, 'login']);
-        Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::group(['prefix' => '/', 'as' => 'auth.'], function () {
+        Route::get('/login', [LoginController::class, 'index'])->name('login');
+        Route::post('/login', [LoginController::class, 'store']);
+
+        Route::get('/register', [RegisterController::class, 'index'])->name('register');
+        Route::post('/register', [RegisterController::class, 'store']);
+
+        Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
     });
 
     // Legal Routes
-    Route::group(['prefix' => '/'], function () {
-        Route::view('/privacy', 'pages.privacy')->name('privacy');
-        Route::view('/voorwaarden', 'pages.voorwaarden')->name('voorwaarden');
+    Route::group(['prefix' => '/', 'as' => 'legal.'], function () {
+        Route::view('/privacy-beleid', 'pages.legal.privacy-policy')->name('privacy-policy');
+        Route::view('/algemene-voorwaarden', 'pages.legal.terms-of-service')->name('terms-of-service');
     });
 
     // Company Routes
-    Route::group(['prefix' => '/bedrijven'], function () {
-        Route::get('/', [CompanyController::class, 'index'])->name('companies');
+    Route::group(['prefix' => '/bedrijven', 'as' => 'companies.'], function () {
+        Route::get('/', [CompanyController::class, 'index'])->name('index');
+        Route::get('/{id}', [CompanyController::class, 'show'])->name('show');
     });
 
     // Vacatures Routes
-    Route::group(['prefix' => '/vacatures'], function () {
-        Route::get('/', [VacatureController::class, 'index'])->name('vacatures');
+    Route::group(['prefix' => '/vacatures', 'as' => 'vacatures.'], function () {
+        Route::get('/', [VacatureController::class, 'index'])->name('index');
+        Route::get('/{id}', [VacatureController::class, 'show'])->name('show');
     });
 
     // Others
-    Route::view('/contact', 'pages.contact')->name('contact');
     Route::view('/college', 'pages.college')->name('college');
-    Route::view('/company', 'pages.companies')->name('company');
-    //Route::view('/vacature', 'pages.vacature')->name('vacature');
     Route::view('/submitpage', 'pages.submitpage')->name('submitpage');
-    Route::view('vacature/{id}', 'pages.vacature')->name('vacature');
 });

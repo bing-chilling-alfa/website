@@ -28,7 +28,7 @@
                         <hr class="dropdown-divider">
                     </li>
                     <li class="px-3 py-1">
-                        <form action="{{ route('logout') }}" method="POST" class="d-grid">
+                        <form action="{{ route('auth.logout') }}" method="POST" class="d-grid">
                             @csrf
                             <button class="btn btn-danger" type="submit">Logout</button>
                         </form>
@@ -50,20 +50,17 @@
             </li>
             @guest
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Login</a>
+                    <a class="nav-link" href="{{ route('auth.login') }}">Login</a>
                 </li>
             @endguest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('companies') }}">Bedrijven</a>
+                <a class="nav-link" href="{{ route('companies.index') }}">Bedrijven</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('vacatures') }}">Vacatures</a>
+                <a class="nav-link" href="{{ route('vacatures.index') }}">Vacatures</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-            </li>
-            <li class="nav-item">
-                {{-- <a class="nav-link" href="{{ route('stageplek') }}">Stageplek</a> --}}
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('submitpage') }}">Inleverpagina</a>
@@ -75,9 +72,12 @@
                 <a class="nav-link" href="{{ route('college') }}">College</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('voorwaarden') }}">Algemeene voorwaarden</a>
+                <a class="nav-link" href="{{ route('legal.terms-of-service') }}">Algemeene voorwaarden</a>
             </li>
-            
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('legal.privacy-policy') }}">Privacy beleid</a>
+            </li>
+
         </ul>
     </div>
 </div>

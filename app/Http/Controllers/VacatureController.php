@@ -23,7 +23,7 @@ class VacatureController extends Controller
     public function index()
     {
         $vacatures = Vacature::all();
-        return view('pages.vacatures', compact('vacatures'));
+        return view('pages.vacatures.index', compact('vacatures'));
     }
 
     /**
@@ -33,7 +33,7 @@ class VacatureController extends Controller
      */
     public function create()
     {
-        return view ('vacatures.create');
+        return view('pages.vacatures.create');
     }
 
     /**
@@ -44,15 +44,17 @@ class VacatureController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate( $request,
-        [
-            'id' => 'required',
-            'business_id'=>'required|numeric',
-            'type-opleiding'=>'required',
-            'start-datum' => 'required',
-            'eind-datum' => 'required',
-            'timestamps' => 'required',
-        ]);
+        $this->validate(
+            $request,
+            [
+                'id' => 'required',
+                'business_id' => 'required|numeric',
+                'type-opleiding' => 'required',
+                'start-datum' => 'required',
+                'eind-datum' => 'required',
+                'timestamps' => 'required',
+            ]
+        );
         $input = $request->all();
         Vacature::create($input);
 
@@ -68,7 +70,7 @@ class VacatureController extends Controller
     public function show($id)
     {
         $vacature = Vacature::findOrFail($id);
-        return view('vacatures.show', compact('vacature','vacature'));
+        return view('pages.vacatures.show', compact('vacature', 'vacature'));
     }
 
     /**
@@ -80,7 +82,7 @@ class VacatureController extends Controller
     public function edit($id)
     {
         $vacature = Vacature::find($id);
-        return view('vacatures.edit',compact('vacature','vacature'));
+        return view('pages.vacatures.edit', compact('vacature', 'vacature'));
     }
 
     /**
@@ -93,20 +95,21 @@ class VacatureController extends Controller
     public function update(Request $request, $id)
     {
         $vacature = Vacature::findOrFail($id);
-        $this->validate( $request,
+        $this->validate(
+            $request,
             [
                 'id' => 'required',
-                'business_id'=>'required|numeric',
-                'type-opleiding'=>'required',
+                'business_id' => 'required|numeric',
+                'type-opleiding' => 'required',
                 'start-datum' => 'required',
                 'eind-datum' => 'required',
                 'timestamps' => 'required',
-            ]);
+            ]
+        );
         $input = $request->all();
         $vacature->fill($input)->save();
 
         return redirect()->route('vacatures.index');
-
     }
 
     /**
@@ -119,8 +122,7 @@ class VacatureController extends Controller
     {
         $vacature = Vacature::findOrFail($id);
 
-        $vacature-> delete();
+        $vacature->delete();
         return redirect()->route('vacatures.index');
-
     }
 }

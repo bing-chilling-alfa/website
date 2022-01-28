@@ -14,7 +14,7 @@
                         <h5 class="card-title">
                             Inloggen
                         </h5>
-                        <form method="POST" action="{{ route('login') }}" novalidate>
+                        <form method="POST" action="{{ route('auth.login') }}" novalidate>
                             @csrf
 
                             <div>
