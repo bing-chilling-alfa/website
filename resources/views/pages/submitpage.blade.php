@@ -9,7 +9,7 @@
                         <h3 class="card-title">
                             Inleverpagina Leerlingen
                         </h3>
-                        <p>Hier worden de bestanden ingeleverd die gecontrolleerd moeten worden</p>
+                        <p>Hier worden de bestanden ingeleverd die gecontrolleerd moeten worden door je begeleider.</p>
                         <form action="{{ route('login') }}" method="POST" enctype="multipart/form-data">
     {{ csrf_field() }}
     Wat lever je in?
