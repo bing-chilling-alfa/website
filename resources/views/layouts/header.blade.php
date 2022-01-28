@@ -57,6 +57,9 @@
                 <a class="nav-link" href="{{ route('companies') }}">Bedrijven</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('vacatures') }}">Vacatures</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
             </li>
             <li class="nav-item">

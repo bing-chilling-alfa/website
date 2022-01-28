@@ -15,11 +15,7 @@ class CompanyController extends Controller
     /**
      * Display a listing of the resource.
      *
-<<<<<<< Updated upstream
-      * /@return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-=======
      * @return
->>>>>>> Stashed changes
      */
     public function index()
     {

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\VacatureController;
 use Illuminate\Support\Facades\Route;
 
 /*

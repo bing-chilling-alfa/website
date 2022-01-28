@@ -4,9 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Contracts\Foundation\Application;
 use App\Models\Vacature;
-use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
+use http\Client\Response;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Routing\Controller;
 
+/**
+ * @method validate(Request $request, string[] $array)
+ */
 
 class VacatureController extends Controller
 {
@@ -18,7 +23,7 @@ class VacatureController extends Controller
     public function index()
     {
         $vacatures = Vacature::all();
-        return view('$vacatures.index', compact('vacatures', 'vacatures'));
+        return view('pages.vacatures', compact('vacatures'));
     }
 
     /**

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Vacature extends Model
 {
     use HasFactory;
+
+    public function vacature()
+    {
+        return $this->belongsTo(Vacature::class);
+    }
 }
