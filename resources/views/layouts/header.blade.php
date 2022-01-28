@@ -63,17 +63,18 @@
                 {{-- <a class="nav-link" href="{{ route('stageplek') }}">Stageplek</a> --}}
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('submitpage') }}">Inleverpagina</a>
+            </li>
+            <li class="nav-item">
                 {{-- <a class="nav-link" href="{{ route('user') }}">User</a> --}}
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('college') }}">College</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
+                <a class="nav-link" href="{{ route('voorwaarden') }}">Algemeene voorwaarden</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('voorwaarden') }}">Voorwaarden</a>
-            </li>
+            
         </ul>
     </div>
 </div>

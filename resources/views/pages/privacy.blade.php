@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title">
-                            Privacybeleid
+                            Algemeene voorwaarden en privacybeleid
                         </h3>
                         <p>Bing Chilling, gevestigd aan test, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring. Contactgegevens: https://www.testtesttest1234321.nl test 0612874650 </p>
                         <h5>Persoonsgegevens die wij verwerken</h5>
