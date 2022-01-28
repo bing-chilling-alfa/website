@@ -5,7 +5,7 @@
         </button>
         @if (Route::currentRouteName() != 'home')
             <form style="width: 100%;" class="mx-2">
-                <input class="form-control" type="text" placeholder="Zoek naar bedrijven...">
+                <input class="form-control w-50" type="text" placeholder="Zoek naar bedrijven..." style="margin: 0 auto">
             </form>
         @endif
         @auth
