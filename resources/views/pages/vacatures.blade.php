@@ -12,12 +12,16 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h3 class="card-title">test</h3>
-            <p class="card-text">test</p>
-            <p class="card-text">test</p>
-            <a href="/bedrijven" class="btn btn-primary">Informatie over</a>
+            <h3 class="card-title">{{$vacature['business_id']}}</h3>
+            <p class="card-text"><b>Start datum:</b> {{$vacature['start-datum']}} </p>
+            <p class="card-text"><b>Eind datum:</b> {{$vacature['eind-datum']}}</p>
+            <p class="card-text"><b>Type opleiding:</b> {{$vacature['type-opleiding']}}</p>
+            <a href="/vacature/{{$vacature['id']}}" class="btn btn-primary">Informatie over vacature bij {{$vacature['business_id']}}</a>
           </div>
         </div>
+        <div class="card-footer text-muted">
+      <b>Geplaatst op:</b> {{$vacature['created_at']}} &emsp; <b>Bijgewerkt op:</b> {{$vacature['updated_at']}}
+  </div>
       </div>
     </div>
   </div>
