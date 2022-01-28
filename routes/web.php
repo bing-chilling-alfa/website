@@ -47,6 +47,7 @@ Route::group(['prefix' => '/'], function () {
     Route::view('/contact', 'pages.contact')->name('contact');
     Route::view('/college', 'pages.college')->name('college');
     Route::view('/company', 'pages.companies')->name('company');
-    Route::view('/vacature', 'pages.vacature')->name('vacature');
+    //Route::view('/vacature', 'pages.vacature')->name('vacature');
     Route::view('/submitpage', 'pages.submitpage')->name('submitpage');
+    Route::view('vacature/{id}', 'pages.vacature')->name('vacature');
 });
