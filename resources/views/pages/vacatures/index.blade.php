@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container">
+    <div class="container py-3">
         <div class="vacature align-items-sm-center">
             @foreach ($vacatures as $vacature)
                 <div class="row">

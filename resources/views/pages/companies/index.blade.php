@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container">
+    <div class="container py-3">
         <div class="bedrijven align-items-sm-center">
             @foreach ($companies as $company)
                 <div class="row">
