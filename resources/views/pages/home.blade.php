@@ -7,10 +7,25 @@
 
 
 @section('content')
+    <style>
+        #home {
+            width: 100%;
+            background: url(https://wallpaperaccess.com/full/187161.jpg);
+            height: 50vh;
+        }
+        .home_form   {
+             margin-top: 150px;
+         }
+        .home_form .form {
+            width: calc(80% - 20px );
+            margin: 0 auto;
+        }
+
+    </style>
 <div class="home" id="home">
     <div class="home_form container">
         <div class="justify-content-center" id="mynavbar">
-            <form class="d-flex">
+            <form class="d-flex form">
                 <input class="form-control me-2" type="text" placeholder="Zoeken naar stagebedrijf...">
                 <button class="btn btn-primary" type="button">Zoeken</button>
             </form>
