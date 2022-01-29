@@ -63,7 +63,7 @@
                 <a class="nav-link" href="{{ route('contact') }}">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('submitpage') }}">Inleverpagina</a>
+                <a class="nav-link" href="{{ route('submit') }}">Inleverpagina</a>
             </li>
             <li class="nav-item">
                 {{-- <a class="nav-link" href="{{ route('user') }}">User</a> --}}

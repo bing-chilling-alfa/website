@@ -55,5 +55,5 @@ Route::group(['prefix' => '/'], function () {
 
     // Others
     Route::view('/college', 'pages.college')->name('college');
-    Route::view('/submitpage', 'pages.submitpage')->name('submitpage');
+    Route::view('/inleveren', 'pages.submit')->name('submit');
 });
