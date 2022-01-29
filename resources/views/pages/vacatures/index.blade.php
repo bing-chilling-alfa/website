@@ -13,18 +13,19 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h3 class="card-title">{{ $vacature['title'] }}</h3>
+                                    <h5 class="card-title">{{ $vacature['title'] }}</h5>
                                     <p class="card-text"><b>Start datum:</b> {{ $vacature['start-datum'] }} </p>
                                     <p class="card-text"><b>Eind datum:</b> {{ $vacature['eind-datum'] }}</p>
                                     <p class="card-text"><b>Type opleiding:</b> {{ $vacature['type-opleiding'] }}</p>
                                     {{-- <a href="/vacature/{{$vacature['id']}}" class="btn btn-primary">Informatie over vacature bij {{$vacature['title']}}</a> --}}
                                     <a href="{{ route('vacatures.show', ['id' => $vacature['id']]) }}"
-                                        class="btn btn-primary">Ga naar de vacature</a>
+                                        class="btn btn-primary">Meer Informatie</a>
                                 </div>
                             </div>
                             <div class="card-footer text-muted">
-                                <b>Geplaatst op:</b> {{ $vacature['created_at'] }} &emsp; <b>Bijgewerkt op:</b>
-                                {{ $vacature['updated_at'] }}
+                                <b>Geplaatst op:</b> {{ $vacature['created_at']->toDayDateTimeString() }} &emsp;
+                                <b>Bijgewerkt op:</b>
+                                {{ $vacature['updated_at']->toDayDateTimeString() }}
                             </div>
                         </div>
                     </div>
