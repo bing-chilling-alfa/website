@@ -7,8 +7,8 @@
     <div class="row">
         <div class="col-md-3">
             <div class="card">
+             <div class="card-title text-white bg-primary justify-content-center"><h4>Tijdlijn</h4></div>
                 <div class="card-body">
-                 <h4 class="card-title text-white bg-primary justify-content-center">Tijdlijn</h4>
                     <div id="content">
                         <ul class="timeline">
                             <li class="event" data-date="">
@@ -30,6 +30,31 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card">
+         <div class="card-title text-white bg-primary justify-content-center"><h4>Stagebedrijf</h4></div>
+            <div class="card-body">
+            
+            </div> 
+            </div>      
+        </div>
+        <div class="col-md-3">
+        <div class="card">
+        <div class="card-title text-white bg-primary justify-content-center"><h4>Inleveren</h4></div>
+            <div class="card-body">
+            
+             
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card">
+         <div class="card-title text-white bg-primary justify-content-center"><h4>Stagebedrijf</h4></div>
+            <div class="card-body">
+            
+            </div> 
+            </div>      
         </div>
     </div>
 </div>
