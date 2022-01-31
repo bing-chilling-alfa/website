@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Timeline</h6>
+                        <h5 class="card-title">Timeline</h5>
                         <div id="content">
                             <ul class="timeline">
                                 <li class="event" data-date="12:30 - 1:00pm">
