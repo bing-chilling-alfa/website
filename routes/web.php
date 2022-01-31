@@ -53,8 +53,13 @@ Route::group(['prefix' => '/'], function () {
         Route::get('/{id}', [VacatureController::class, 'show'])->name('show');
     });
 
+    // Dashboard Routes
+    Route::group(['prefix' => '/dashboard', 'as' => 'dashboard.'], function () {
+        Route::view('/docent', 'pages.dashboard.teacher')->name('teacher');
+        Route::view('/student', 'pages.dashboard.student')->name('student');
+    });
+
     // Others
     Route::view('/college', 'pages.college')->name('college');
     Route::view('/inleveren', 'pages.submit')->name('submit');
-    Route::view('/studenten-dashboard', 'pages.dashboards.student')->name('student');
 });
