@@ -74,10 +74,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('legal.terms-of-service') }}">Algemeene voorwaarden</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('legal.privacy-policy') }}">Privacy beleid</a>
-            </li>
-
         </ul>
     </div>
 </div>
