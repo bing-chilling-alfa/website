@@ -4,8 +4,14 @@
   background: url(https://wallpaperaccess.com/full/187161.jpg);
   height: 50vh;
 }
-#home_form {
+
+.home_form {
   margin-top: 150px;
+}
+
+.home_form .form {
+  width: calc(80% - 20px);
+  margin: 0 auto;
 }
 
 .timeline {
