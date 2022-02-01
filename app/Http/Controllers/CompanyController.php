@@ -69,7 +69,7 @@ class CompanyController extends Controller
      */
     public function show($id)
     {
-        $company = Company::findOrFail($id);
+        $companies = Company::findOrFail($id);
         return view('pages.companies.show', compact('company', 'company'));
     }
 
@@ -81,7 +81,7 @@ class CompanyController extends Controller
      */
     public function edit($id)
     {
-        $company = Company::find($id);
+        $companies = Company::find($id);
         return view('pages.companies.edit', compact('company', 'company'));
     }
 
@@ -121,7 +121,7 @@ class CompanyController extends Controller
      */
     public function destroy($id)
     {
-        $company = Company::findOrFail($id);
+        $companies = Company::findOrFail($id);
 
         $company->delete();
         return redirect()->route('companies.index');
