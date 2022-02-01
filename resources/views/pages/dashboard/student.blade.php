@@ -40,19 +40,10 @@
             <h6><b>Adres</b></h6>
             <p>Waardeel 2, 8431 ND Oosterwolde</p>
             </div> 
-            </div>      
-        </div>
-        <div class="col-md-3">
-        <div class="card">
-        <div class="card-title text-white bg-primary justify-content-center"><h4>Inleveren</h4></div>
-            <div class="card-body">
-            <p>PVA inleveren op 21-02-2022</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-md-6">
-        <div class="card">
-         <div class="card-title text-white bg-primary justify-content-center"><h4>School</h4></div>
+            </div>
+            <br>
+            <div class="card">
+            <div class="card-title text-white bg-primary justify-content-center"><h4>School</h4></div>
             <div class="card-body">
             <h6><b>Naam</b></h6>
             <p>Alfa-college</p>
@@ -62,7 +53,14 @@
             <p>Applicatie- en mediaontwikkelaar</p>
             </div> 
             </div>      
+        </div>      
+        <div class="col-md-3">
+        <div class="card">
+        <div class="card-title text-white bg-primary"><h4>Inleveren</h4></div>
+            <div class="card-body">
+            <p>PVA inleveren op 21-02-2022</p>
+        </div>
+        </div>
         </div>
     </div>
-</div>
 @endsection
