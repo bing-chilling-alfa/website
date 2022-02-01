@@ -70,7 +70,7 @@ class CompanyController extends Controller
     public function show($id)
     {
         $companies = Company::findOrFail($id);
-        return view('pages.companies.show', compact('company', 'company'));
+        return view('pages.companies.show', compact('companies'));
     }
 
     /**
