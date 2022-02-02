@@ -24,7 +24,6 @@
   position: relative;
   line-height: 1.4em;
   font-size: 1.03em;
-  padding: 50px;
   list-style: none;
   text-align: left;
   max-width: 70%;
@@ -123,6 +122,12 @@
 .rtl .timeline .event::after {
   left: 0;
   right: -55.8px;
+}
+
+h4, .h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*!
