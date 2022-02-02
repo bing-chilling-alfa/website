@@ -18,7 +18,7 @@
                     {{ $companies['phone_number'] }} <br>
                     {{ $companies['email'] }} <br>
                     {{ $companies['website'] }}<br>
-                    {{ $companies['street_name'] }} 
+                    {{ $companies['street_name'] }}
                     {{ $companies['house_number'] }}<br>
                     {{ $companies['zip_code'] }}<br>
                     {{ $companies['place_name'] }}<br>
@@ -29,18 +29,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title bg-primary text-white">Stageplekken</h3>
-                    <p>
-                        title : Test <br>
-                        type-opleiding : 1 <br>
-                        start-datum : 1-1-2021 <br>
-                        eind-datum : 1-1-2021 <br>
-                    </p>
-                </div>
+        <h3 class="card-title bg-primary text-white">Stageplekken</h3>
+        <div class="row align-items-start">
+            <div class="col">
+                <p>
+                    title : Software developer <br>
+                    type-opleiding : 2 <br>
+                    start-datum : 1-1-2021 <br>
+                    eind-datum : 1-1-2021 <br>
+                </p>
             </div>
+            <div class="col">
+                <p>
+                    title : Software developer <br>
+                    type-opleiding : 2 <br>
+                    start-datum : 1-1-2021 <br>
+                    eind-datum : 1-1-2021 <br>
+                </p>
         </div>
     </div>
 @endsection
