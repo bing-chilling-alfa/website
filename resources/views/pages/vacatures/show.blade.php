@@ -12,7 +12,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Software developer</h5>
-                    <button class="btn btn-primary bg-primary">BOL</button>
+                    <button class="btn btn-primary bg-primary btn-sm">BOL</button>
                     <div class="card-text">
                         <p>Groningen • MBO 4</p>
                         Vind jij het leuk om goede en vooral effectieve websites te bouwen? Ben jij communicatief vaardig en
