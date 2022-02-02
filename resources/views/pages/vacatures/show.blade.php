@@ -59,75 +59,46 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
         </div>
 
 
-        <div class=".col-6">
-            <div id="CarrouselControls" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#CarouselControls" data-slide-to="0" class="active"></li>
-                    <li data-target="#CarouselControls" data-slide-to="1"></li>
-                    <li data-target="#CarouselControls" data-slide-to="2"></li>
-                </ol>
+        {{-- <div class="h-75 d-inline-block" style=120px; bg-primary> --}}
+            <div class="container py-3">
+                <div class="col-6">
+                    <div id="CarrouselControls" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#CarouselControls" data-slide-to="0" class="active"></li>
+                            <li data-target="#CarouselControls" data-slide-to="1"></li>
+                            <li data-target="#CarouselControls" data-slide-to="2"></li>
+                        </ol>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100"
-                            src="https://st3.depositphotos.com/5392356/13702/i/950/depositphotos_137028018-stock-photo-programmers-cooperating-at-company.jpg?forcejpeg=true"
-                            alt="First slide">
-                    </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100"
+                                    src="https://st3.depositphotos.com/5392356/13702/i/950/depositphotos_137028018-stock-photo-programmers-cooperating-at-company.jpg?forcejpeg=true"
+                                    alt="First slide">
+                            </div>
 
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651"
-                            alt="Second Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651"
-                            alt="Third Slide">
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651"
+                                    alt="Second Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651"
+                                    alt="Third Slide">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#CarrouselControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#CarrouselControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-
-                <a class="carousel-control-prev" href="#CarrouselControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#CarrouselControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
-
-        {{-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>My Caption Title (1st Image)</h5>
-                <p>The whole caption will only show up if the screen is at least medium size.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div> --}}
-
-
 
     @endsection
