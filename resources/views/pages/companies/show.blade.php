@@ -5,7 +5,8 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title bg-primary text-white">{{ $companies['name'] }}</h3>
+                    <h3 class="card-title bg-primary text-white justify-content-center d-flex">{{ $companies['name'] }}
+                    </h3>
                     <p class="card-text">
                     <h5>Wat voor bedrijf zijn wij?</h5>
                     <p>Onze webwinkel is een uitstekende plaats voor het ontwikkelen van je skills. Je komt in een team met
@@ -29,23 +30,31 @@
                 </div>
             </div>
         </div>
-        <h3 class="card-title bg-primary text-white">Stageplekken</h3>
+        <h3 class="card-title bg-primary text-white justify-content-center d-flex">Stageplekken</h3>
         <div class="row align-items-start">
             <div class="col">
-                <p>
-                    title : Software developer <br>
-                    type-opleiding : 2 <br>
-                    start-datum : 1-1-2021 <br>
-                    eind-datum : 1-1-2021 <br>
-                </p>
+                <div class="card">
+                    <div class="card-body">
+                        <p>
+                            title : Software developer <br>
+                            type-opleiding : 2 <br>
+                            start-datum : 1-1-2021 <br>
+                            eind-datum : 1-1-2021 <br>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <p>
-                    title : Software developer <br>
-                    type-opleiding : 2 <br>
-                    start-datum : 1-1-2021 <br>
-                    eind-datum : 1-1-2021 <br>
-                </p>
+                <div class="card">
+                    <div class="card-body">
+                        <p>
+                            title : Software developer <br>
+                            type-opleiding : 2 <br>
+                            start-datum : 1-1-2021 <br>
+                            eind-datum : 1-1-2021 <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-@endsection
+    @endsection
