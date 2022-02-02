@@ -12,7 +12,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Software developer</h5>
-                    <button class="btn btn-primary bg-primary btn-sm">BOL</button>
+                    <button class="btn btn-primary bg-primary btn-m">BOL</button>
                     <div class="card-text">
                         <p>Groningen • MBO 4</p>
                         Vind jij het leuk om goede en vooral effectieve websites te bouwen? Ben jij communicatief vaardig en
@@ -49,7 +49,8 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
 
             <div class="col-6">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body" style="width: 300px;">
+
                         <div id="CarrouselControls" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#CarouselControls" data-slide-to="0" class="active"></li>
@@ -90,8 +91,8 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
             </div>
             <div class="row">
                 <div class="col-6">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="card" style="width: 340px;">
+                        <div class="card-body" >
                             <h5>Werkt in een ontwikkelteam</h5>
                             <div class="card-text">
                                 <p>Groningen • MBO 4</p>
@@ -103,7 +104,10 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
 
 
-            @endsection
+@endsection
