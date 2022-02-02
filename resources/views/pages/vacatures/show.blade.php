@@ -23,6 +23,8 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
             </div>
         </div>
 
+        <br>
+
         <div class="row">
             <div class="col-6">
                 <div class="card">
@@ -48,7 +50,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
 
 
             <div class="col-6">
-                <div class="card">
+                <div class="card" style="height: 240px">
                     <div class="card-body" style="width: 300px;">
 
                         <div id="CarrouselControls" class="carousel slide" data-ride="carousel">
@@ -91,7 +93,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
             </div>
             <div class="row">
                 <div class="col-6">
-                    <div class="card" style="width: 340px;">
+                    <div class="card" style="width: 335px;">
                         <div class="card-body" >
                             <h5>Werkt in een ontwikkelteam</h5>
                             <div class="card-text">
