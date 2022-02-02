@@ -66,13 +66,13 @@
                 <a class="nav-link" href="{{ route('submit') }}">Inleverpagina</a>
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link" href="{{ route('user') }}">User</a> --}}
+                <a class="nav-link" href="{{ route('dashboard.student') }}">Dashboard leerling</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('college') }}">College</a>
+                <a class="nav-link" href="{{ route('dashboard.teacher') }}">Dashboard docent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('legal.terms-of-service') }}">Algemeene voorwaarden</a>
+                <a class="nav-link" href="{{ route('legal.terms-of-service') }}">Algemene voorwaarden</a>
             </li>
         </ul>
     </div>
