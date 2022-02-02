@@ -36,13 +36,6 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
                             <br>
                             B1-K1-W1 Plant werkzaamheden en bewaakt de voortgang<br>
                             <br>
-                            B1-K1-W2 Ontwerpt software
-                            <br>
-                            B1-K1-W3 Realiseert (onderdelen van) software
-                            <br>
-                            B1-K1-W4 Test software
-                            <br>
-                            B1-K1-W4 Test software
                         </div>
                     </div>
                 </div>
@@ -50,9 +43,8 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
 
 
             <div class="col-6">
-                <div class="card" style="height: 240px">
-                    <div class="card-body" style="width: 300px;">
-
+                <div class="card">
+                    <div class="card-body" >
                         <div id="CarrouselControls" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#CarouselControls" data-slide-to="0" class="active"></li>
@@ -91,7 +83,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
                     </div>
                 </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-6">
                     <div class="card" style="width: 335px;">
                         <div class="card-body" >
@@ -105,7 +97,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
