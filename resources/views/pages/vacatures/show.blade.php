@@ -48,6 +48,25 @@ B1-K2-W3 Reflecteert op het werk<br>
   </div>
 </div>
 </div>
+
+<div id ="CarrouselControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class = "carousel-item active">
+<img class="d-block w-100" src="https://st3.depositphotos.com/5392356/13702/i/950/depositphotos_137028018-stock-photo-programmers-cooperating-at-company.jpg?forcejpeg=true" alt="Team">
 </div>
+<div class="carousel-inner">
+<div class = "carousel-item active">
+<img class="d-block w-100" src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651" alt="">
+</div>
+</div>
+<a class="carousel-control-prev" href="CarrouselControls" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Vorige</span>
+</a>
+
+<a class="carousel-control-next" href="CarrouselControls" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Volgende</span>
+</a>
 </div>
 @endsection
