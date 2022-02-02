@@ -49,16 +49,27 @@ B1-K2-W3 Reflecteert op het werk<br>
 </div>
 </div>
 
+
+<div class = ".col-6">
 <div id ="CarrouselControls" class="carousel slide" data-ride="carousel">
+<ol class = "carousel-indicators">
+<li data-target="#CarouselControls" data-slide-to="0" class="active"></li>
+<li data-target="#CarouselControls" data-slide-to="1" class="active"></li>
+<li data-target="#CarouselControls" data-slide-to="0" class="active"></li>
+</ol>
+
 <div class="carousel-inner">
 <div class = "carousel-item active">
-<img class="d-block w-100" src="https://st3.depositphotos.com/5392356/13702/i/950/depositphotos_137028018-stock-photo-programmers-cooperating-at-company.jpg?forcejpeg=true" alt="Team">
+<img class="d-block w-100" src="https://st3.depositphotos.com/5392356/13702/i/950/depositphotos_137028018-stock-photo-programmers-cooperating-at-company.jpg?forcejpeg=true" alt="First slide">
 </div>
-<div class="carousel-inner">
-<div class = "carousel-item active">
-<img class="d-block w-100" src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651" alt="">
+<div class="carousel-item">
+<img class="d-block w-100" src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651" alt="Second Slide">
+</div>
+<div class="carousel-item">
+<img class="d-block w-100" src="https://www.istockphoto.com/nl/foto/social-media-concept-gm1205703732-347429651" alt="Third Slide">
 </div>
 </div>
+
 <a class="carousel-control-prev" href="CarrouselControls" role="button" data-slide="prev">
 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 <span class="sr-only">Vorige</span>
@@ -69,4 +80,8 @@ B1-K2-W3 Reflecteert op het werk<br>
 <span class="sr-only">Volgende</span>
 </a>
 </div>
+</div>
+
+
+
 @endsection
