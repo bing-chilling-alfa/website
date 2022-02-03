@@ -33,9 +33,21 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
                         <h5>Realiseert software</h5>
                         <div class="card-text">
                             <p>Groningen • MBO 4</p>
-                            <br>
                             B1-K1-W1 Plant werkzaamheden en bewaakt de voortgang<br>
                             <br>
+                            B1-K1-W2 Ontwerpt software<br>
+                            <br>
+                            B1-K1-W3 Realiseert (onderdelen van) software<br>
+                            <br>
+                            B1-K1-W4 Test software
+                        </div>
+                        <div class="card-text">
+                            <br>
+
+B1-K2-W2 Presenteert het opgeleverde werk
+<br>
+B1-K2-W3 Reflecteert op het werk
+<br>
                         </div>
                     </div>
                 </div>
