@@ -11,7 +11,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Software developer</h4>
+                    <h5 class="card-title">Software developer</h5>
                     <button class="btn btn-primary bg-primary btn-m">BOL</button>
                     <div class="card-text">
                         <p>Groningen • MBO 4</p>
@@ -29,7 +29,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
             <div class="col-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title text-white bg-primary">Wat ga je leren?</h5>
+                        <h4 class="card-title text-white bg-primary">Wat ga je leren?</h4>
                         <h5>Realiseert software</h5>
                         <div class="card-text">
                             <p>Groningen • MBO 4</p>
