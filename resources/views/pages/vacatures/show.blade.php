@@ -30,7 +30,7 @@ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCm
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-white bg-primary">Wat ga je leren?</h4>
-                        <h5>Realiseert software</h5>
+                        <h6>Realiseert software</h6>
                         <div class="card-text">
                             <p>Groningen • MBO 4</p>
                             B1-K1-W1 Plant werkzaamheden en bewaakt de voortgang<br>
